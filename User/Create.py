@@ -1,7 +1,11 @@
 from .Database import Database
 
 
-class Create(Database): 
+class Create(Database):
+    def __init__(self, path):
+        super().__init__(path)
+
+        
     def add_user(self, user, password):
         """
         Add new user 

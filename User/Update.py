@@ -2,7 +2,7 @@ from .Database import Database
 
 
 class Update(Database):
-    def __init__(self, path) -> None:
+    def __init__(self, path):
         super().__init__(path=path)
     
     def update_user(self,id, user, password):
