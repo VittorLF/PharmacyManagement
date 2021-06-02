@@ -23,6 +23,6 @@ class Database:
             database.write(json.dumps(data))
 
     @property
-    def read_file(self) -> list:
+    def read_file(self):
         with open(self.path, 'r') as database:
             return json.loads(database.read())
